@@ -168,11 +168,11 @@
     transition: opacity 0.5s;
   }
   .auth-overlay.hide { opacity: 0; pointer-events: none; }
-  .auth-btn {
-    padding: 15px 40px; border-radius: 30px; border: none; font-size: 18px;
+  .auth-btn {  
+    padding: 20px 60px; border-radius: 50px; border: 2px solid #88bbff; font-size: 24px; /* 这里改大了 */
     background: linear-gradient(45deg, #2b3a7a, #4b2c6b); color: #fff;
-    box-shadow: 0 0 30px rgba(80,150,255,0.4); cursor: pointer;
-    animation: pulse 2s infinite;
+    box-shadow: 0 0 50px rgba(80,150,255,0.8); cursor: pointer;
+    animation: pulse 2s infinite; z-index: 1000;
   }
   @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
 </style>
